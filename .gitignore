@@ -35,3 +35,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Terraform backend local configuration
+backend.hcl
