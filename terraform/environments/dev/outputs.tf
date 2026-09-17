@@ -7,3 +7,12 @@ output "lambda_policy_arn" {
   description = "ARN of the CloudGuard Lambda IAM policy."
   value       = module.iam.lambda_policy_arn
 }
+output "dynamodb_table_name" {
+  description = "Name of the CloudGuard DynamoDB table."
+  value       = module.dynamodb.table_name
+}
+
+output "dynamodb_table_arn" {
+  description = "ARN of the CloudGuard DynamoDB table."
+  value       = module.dynamodb.table_arn
+}
