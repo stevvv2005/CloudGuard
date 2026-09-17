@@ -21,3 +21,11 @@ module "lambda" {
   dynamodb_table_name = module.dynamodb.table_name
   source_file         = "${path.root}/../../../app/lambda/handler.py"
 }
+module "api_gateway" {
+  source = "../../modules/api-gateway"
+
+  project_name         = var.project_name
+  environment          = var.environment
+  lambda_function_name = module.lambda.function_name
+  lambda_invoke_arn    = module.lambda.invoke_arn
+}

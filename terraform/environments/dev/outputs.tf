@@ -16,3 +16,7 @@ output "dynamodb_table_arn" {
   description = "ARN of the CloudGuard DynamoDB table."
   value       = module.dynamodb.table_arn
 }
+output "api_endpoint" {
+  description = "Public endpoint of the CloudGuard HTTP API."
+  value       = module.api_gateway.api_endpoint
+}
