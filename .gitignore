@@ -38,3 +38,7 @@ Thumbs.db
 
 # Terraform backend local configuration
 backend.hcl
+
+# Local Lambda artifacts
+cloudguard-lambda.zip
+response.json
